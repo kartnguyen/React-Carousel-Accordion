@@ -10,6 +10,97 @@
     margin: 0 auto;
 }
 
-.AccordionExample {
-    margin-top: 24px;
+.carousel-container {
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container .carousel-button {
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ffffff9d;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.carousel-container .carousel-button:hover {
+    color: #11111195;
+    background-color: #ffffff83;
+}
+
+.carousel-container .left {
+    left: 16px;
+}
+
+.carousel-container .right {
+    right: 16px;
+}
+
+.carousel-container .img {
+    width: 100%;
+    /* padding-top: calc(9/16*100%); */
+    aspect-ratio: 16/9;
+    background: no-repeat center/cover;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+    margin-top: 20px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+}
+
+.carousel-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: rgba(255, 0, 0, 0.407);
+}
+
+.accordion-container {
+    margin-top: 80px;
+}
+
+.accordion-item {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-bottom: 16px;
+}
+
+.accordion-item.open .accordion-title {
+    background-color: rgba(255, 0, 0, 0.407);
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+.accordion-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    width: 100%;
+    padding: 10px;
 }
